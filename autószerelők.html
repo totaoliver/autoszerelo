@@ -1,63 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Legjobb Autószerelők</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>A legjobb autószerelők</title>
 </head>
 <body>
-    <header style="display: flex; align-items: center; justify-content: center; position: relative; height: 150px;">
-        <img src="logó.png" alt="logó">
-        <h1 style="margin: 0;">A legjobb autószerelők</h1>
-    </header>
-    <nav class="navbar bs-light text-white navbar-expand-sm sticky-top text-bg-dark p-3">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="">Rólunk</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="">Dolgozóink</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="">Munkáink</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="">Elérhetőségek</a>
-                </li>
-            </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logó.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="#rolunk">Rólunk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#szolgaltatasok">Szolgáltatások</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#referenciak">Referenciák</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ertekelesek">Értékelések</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kapcsolat-es-ajanlat">Ajánlatkérés</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-<body>
 
-<div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="autószerelőemberek.png" class="d-block w-10" alt="">
+    <header class="container-fluid p-0">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="kép1.png" class="d-block w-100 carousel-img" alt="Szerviz 1">
+                    <div class="carousel-caption">
+                        <h2 class="display-4 fw-bold">Profi Diagnosztika</h2>
+                        <a href="#kapcsolat-es-ajanlat" class="btn btn-orange">Időpontfoglalás</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="kép2.png" class="d-block w-100 carousel-img" alt="Szerviz 2">
+                    <div class="carousel-caption">
+                        <h2 class="display-4 fw-bold">Gyors Szerviz</h2>
+                        <a href="#szolgaltatasok" class="btn btn-orange">Részletek</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="kép4.png" class="d-block w-100 carousel-img" alt="Szerviz 3">
+                    <div class="carousel-caption">
+                        <h2 class="display-4 fw-bold">Garanciális Munka</h2>
+                        <a href="#referenciak" class="btn btn-orange">Referenciák</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="rolunk" class="container py-5 text-center">
+        <h2 class="section-title">Bemutatkozás</h2>
+        <div class="row align-items-center mt-4">
+            <div class="col-md-6 text-start">
+                <p>Tapasztalt csapatunk minden típusú gépjármű teljes körű szervizelését vállalja.</p>
+                <ul class="list-group list-group-flush border rounded">
+                    <li class="list-group-item">Gyári alkatrészek</li>
+                    <li class="list-group-item">Modern műhely</li>
+                    <li class="list-group-item">Korrekt árak</li>
+                </ul>
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+                <img src="autószerelőemberek.png" class="img-fluid rounded shadow" alt="Rólunk">
+            </div>
+        </div>
+    </section>
+
+    <section id="szolgaltatasok" class="bg-light py-5 text-center">
+        <div class="container">
+            <h2 class="section-title">Szolgáltatások</h2>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-top border-primary border-4">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Diagnosztika</h5>
+                            <p>Modern eszközökkel gyorsan és pontosan feltárjuk autója hibáit, hogy a javítás a lehető leghatékonyabb legyen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-top border-warning border-4">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Karbantartás és olajcsere</h5>
+                            <p>Rendszeres karbantartással és olajcserével biztosítjuk autója hosszú élettartamát és megbízható működését.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-top border-danger border-4">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Javítás</h5>
+                            <p>Legyen szó kisebb hibáról vagy komolyabb problémáról, szakszerű javítással visszaállítjuk autója tökéletes állapotát.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="referenciak" class="bg-dark text-white py-5 text-center">
+        <div class="container">
+            <h2 class="section-title border-white">Referenciamunkák</h2>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4"><img src="kép3.png" class="img-fluid rounded ref-kep" alt="Ref 1"></div>
+                <div class="col-md-4"><img src="kép5.png" class="img-fluid rounded ref-kep" alt="Ref 2"></div>
+                <div class="col-md-4"><img src="autószerelőemberek.png" class="img-fluid rounded ref-kep" alt="Ref 3"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ertekelesek" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Ügyfeleink véleménye</h2>
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="card h-100 p-3 shadow-sm border-0">
+                        <div class="card-body">
+                            <p class="fst-italic">"Nagyon gyorsak és segítőkészek voltak. Az autómat még aznap visszakaptam."</p>
+                            <h6 class="fw-bold mb-0">- Kovács Levente</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-3 shadow-sm border-0">
+                        <div class="card-body">
+                            <p class="fst-italic">"Végre egy szerviz, ahol nem akartak lehúzni. Mindenről kaptam tájékoztatást."</p>
+                            <h6 class="fw-bold mb-0">- Borbély Zalán</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-3 shadow-sm border-0">
+                        <div class="card-body">
+                            <p class="fst-italic">"Profi diagnosztika és korrekt árak. Csak ide hordom az autómat."</p>
+                            <h6 class="fw-bold mb-0">- Heizler Dávid</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  <section id="kapcsolat-es-ajanlat" class="py-5 bg-light">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-md-4">
+                <h2 class="section-title">Kapcsolat</h2>
+                <p class="mt-4">Keressen minket bizalommal az alábbi elérhetőségeken, vagy kérjen ajánlatot az űrlap segítségével!</p>
+                
+                <div class="mb-4">
+                    <h5 class="fw-bold">Helyszín</h5>
+                    <p>1234 Budapest, Szerelő utca 12.</p>
+                </div>
+                
+                <div class="mb-4">
+                    <h5 class="fw-bold">Telefonszám</h5>
+                    <p>+36 30 123 4567</p>
+                </div>
+                
+                <div class="mb-4">
+                    <h5 class="fw-bold">E-mail</h5>
+                    <p>info@autoszerviz.hu</p>
+                </div>
+
+                <div class="mb-4">
+                    <h5 class="fw-bold">Nyitvatartás</h5>
+                    <p>Hétfő - Péntek: 08:00 - 17:00</p>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="bg-white p-4 shadow rounded border-orange-top">
+                    <h3 class="fw-bold mb-4">Ajánlatkérés</h3>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Név">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="E-mail cím">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Autó típusa (pl. Porsche 911)">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Milyen javításra van szüksége?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-orange w-100 py-3">AJÁNLAT KÉRÉSE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="kép1.png" class="d-block w-10" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="kép2.png" class="d-block w-10" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-  <div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn btn-primary" type="button">Button</button>
-  <button class="btn btn-primary" type="button">Button</button>
-</div>
-</div>
-    
+</section>
+
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p>&copy; 2026 Autószerelő Weboldal</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
