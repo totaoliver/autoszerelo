@@ -3,8 +3,8 @@ body {
     
 }
 
-.navbar-brand img {
-    height: 50px;
+.logo img {
+    height: 90px;
 }
 
 .carousel-img {
@@ -19,7 +19,7 @@ body {
     bottom: 20%;
 }
 
-.btn-orange {
+.gomb {
     background-color: #ff6600;
     color: #ffffff;
     padding: 12px 30px;
@@ -34,7 +34,7 @@ body {
     object-fit: cover;
 }
 
-.section-title {
+.cim {
     margin-bottom: 20px;
     border-bottom: 4px solid #ff6600;
     display: inline-block;
