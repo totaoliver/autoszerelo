@@ -65,3 +65,11 @@ footer {
     color: #ffffff;
     padding: 20px 0;
 }
+
+.list-group-item a{
+    font-weight: bold;
+}
+
+#rolunk p{
+    font-size: 22px;
+}
